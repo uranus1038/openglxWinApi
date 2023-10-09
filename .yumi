@@ -1,0 +1,4 @@
+g++ -o NunthawanEngin.exe NunthawanMain.cpp 
+g++ -L ../../CommonFile/lib -o preview.exe ../graphics/CreateGraphics.cpp -lglfw3 -lglfw3dll
+
+g++ -I ../../CommonFile/include -L ../../CommonFile/lib -o preview.exe ../graphics/CreateGraphics.cpp ../graphics/glad.c -lglfw3dll  -lglfw3 -lopengl32 -lgdi32

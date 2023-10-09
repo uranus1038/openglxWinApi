@@ -1,15 +1,23 @@
 #pragma once
+#ifndef UNICODE 
+#define UNICODE
+#endif 
+
+#define FILE_MENU 0 
+
 #include <windows.h>
-#include <System.h>
+#include "UMISystem.cpp"
+using namespace UMISystem ;
 class WindowGui {
 public:
-    int createWindow(const wchar_t windowName[],const wchar_t windowClassName[],int width , int height , int x , int y,HINSTANCE hInstance ,int mCmdShowm  ) noexcept;
-    void destroyWindow(HWND hWnd);
+    bool createWindow(const wchar_t WINDOW_TEXT[],const wchar_t WINDOW_CLASS[],int width , int height , int x , int y,HINSTANCE hInstance ,int mCmdShowm  ) noexcept;
+    void destroyWindow();
     void loopEvent();
 private:
     HWND hWnd ; 
-    static LRESULT CALLBACK WindowProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam);
    
+    static void addMenu(HWND hWnd,HMENU hMenu);
+    static LRESULT CALLBACK WindowProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam);
 };
 
 
