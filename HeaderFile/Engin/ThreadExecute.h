@@ -3,9 +3,7 @@
 #include <fstream>
 #include <thread>
 #include <functional>
-#include "UMISystem.cpp"
 
-using namespace UMISystem ;
 
 namespace ThreadExecute
 {

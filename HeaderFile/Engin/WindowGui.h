@@ -6,8 +6,6 @@
 #define FILE_MENU 0 
 
 #include <windows.h>
-#include "UMISystem.cpp"
-using namespace UMISystem ;
 class WindowGui {
 public:
     bool createWindow(const wchar_t WINDOW_TEXT[],const wchar_t WINDOW_CLASS[],int width , int height , int x , int y,HINSTANCE hInstance ,int mCmdShowm  ) noexcept;

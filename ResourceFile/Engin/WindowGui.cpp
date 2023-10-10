@@ -1,4 +1,4 @@
-#include "../../HeaderFile/Engin/WindowGui.h"
+#include "WindowGui.h"
 #include "WindowEvent.cpp"
 bool WindowGui::createWindow(const wchar_t WINDOW_TEXT[],const wchar_t WINDOW_CLASS[],int width , int height , int x , int y,HINSTANCE hInstance ,int mCmdShow ) noexcept
 {

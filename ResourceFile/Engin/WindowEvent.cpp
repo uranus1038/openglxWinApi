@@ -1,4 +1,4 @@
-#include "../../HeaderFile/Engin/WindowGui.h"
+#include "WindowGui.h"
 #include "ThreadExecute.cpp"
 using namespace ThreadExecute ;
 
@@ -18,7 +18,7 @@ LRESULT CALLBACK WindowGui::WindowProc(HWND hWnd, UINT message, WPARAM wParam, L
         switch (wParam)
         {
         case FILE_MENU:
-            Console::Log("Click");
+            Console::Log("Compiling . . .");
             thread::runtime(thread::processPreview);
             break;
         }
