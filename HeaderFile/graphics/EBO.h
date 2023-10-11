@@ -1,5 +1,7 @@
-#pragma once
-#include<glad/glad.h>
+#ifndef EBO_CLASS_H
+#define EBO_CLASS_H
+
+#include"glad/glad.h"
 
 class EBO
 {
@@ -10,4 +12,4 @@ public:
 	void Unbind();
 	void Delete();
 };
-
+#endif
